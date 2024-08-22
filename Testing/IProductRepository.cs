@@ -11,6 +11,10 @@ public interface IProductRepository
 
 // GET SINGLE
     Product GetProduct(int id);
-    void UpdateProduct(Product product);
-  
+ //Update
+    public  void UpdateProduct(Product product);
+    public void InsertProduct(Product productToInsert);
+    //Get Categories
+    public IEnumerable<Category> GetCategories();
+    public Product AssignCategory();
 }
